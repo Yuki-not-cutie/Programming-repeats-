@@ -1,0 +1,171 @@
+[gd_scene load_steps=11 format=3 uid="uid://koyxf2onyqm6"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_i5iqm"]
+[ext_resource type="AudioStream" uid="uid://d1atoj17tkxbe" path="res://beep-6-96243.mp3" id="2_6jfcs"]
+[ext_resource type="AudioStream" uid="uid://dvpsio7fnv55r" path="res://beep-104060.mp3" id="3_yemes"]
+[ext_resource type="AudioStream" uid="uid://bef1vru1kqo6u" path="res://microwave-end-sound-98680.mp3" id="4_gjem7"]
+[ext_resource type="AudioStream" uid="uid://c1ws0kwbisiqg" path="res://playernocanselect-37979.mp3" id="5_i76p0"]
+[ext_resource type="AudioStream" uid="uid://c0pt2i2bhe0i" path="res://point-smooth-beep-230573.mp3" id="6_cxv7j"]
+[ext_resource type="AudioStream" uid="uid://dbiv14tfy4jax" path="res://short-beep-tone-47916.mp3" id="7_ceq65"]
+[ext_resource type="AudioStream" uid="uid://dng14m66jcsr2" path="res://sonar-sweep-beep-80957.mp3" id="8_0v4vt"]
+[ext_resource type="AudioStream" uid="uid://cp04y885awapm" path="res://start-13691.mp3" id="9_ucoex"]
+[ext_resource type="AudioStream" uid="uid://cahvjhc6rud5p" path="res://store-scanner-beep-90395.mp3" id="10_ny4vm"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i5iqm")
+
+[node name="Button5" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.0
+offset_top = -76.0
+offset_right = 122.0
+offset_bottom = 76.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "Sound 5"
+
+[node name="Button6" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -244.0
+offset_top = -76.0
+offset_bottom = 76.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "Sound 6"
+
+[node name="Button7" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -152.0
+offset_right = 244.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 32
+text = "Sound 7"
+
+[node name="Button8" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -122.0
+offset_top = -152.0
+offset_right = 122.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 32
+text = "Sound 8"
+
+[node name="Button9" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -244.0
+offset_top = -152.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 32
+text = "Sound 9"
+
+[node name="Button1" type="Button" parent="."]
+layout_mode = 1
+offset_right = 244.0
+offset_bottom = 152.0
+theme_override_font_sizes/font_size = 32
+text = "Sound 1"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -122.0
+offset_right = 122.0
+offset_bottom = 152.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 32
+text = "Sound 2"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -244.0
+offset_bottom = 152.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 32
+text = "Sound 3"
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -76.0
+offset_right = 244.0
+offset_bottom = 76.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "Sound 4"
+
+[node name="AudioStreamPlayer1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_6jfcs")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_yemes")
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_gjem7")
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_i76p0")
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_cxv7j")
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_ceq65")
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_0v4vt")
+
+[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_ucoex")
+
+[node name="AudioStreamPlayer9" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_ny4vm")
+
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="Button7" to="." method="_on_button_7_pressed"]
+[connection signal="pressed" from="Button8" to="." method="_on_button_8_pressed"]
+[connection signal="pressed" from="Button9" to="." method="_on_button_9_pressed"]
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
